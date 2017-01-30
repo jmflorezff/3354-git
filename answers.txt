@@ -1,0 +1,9 @@
+(a) 7
+(b) 6 days ago
+(c) Git log shows commit logs while Git status shows repository's status
+(d) An untracked file is a file that exists in the working tree of a git repository but isn't listed in the index.
+An unstaged file is a file that is listed in the index, but the contents of the file in the working tree are different to 
+the contents listed in the index.
+(e) Git revert is used to undo a previous commit. Git reset is to undo changes in your working directory that haveb;t been 
+committed yet.
+(f) You cannot pull if there are uncommitted changes. Either you commit or undo your changes
