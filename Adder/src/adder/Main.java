@@ -13,9 +13,16 @@ public class Main {
 
     private static int addArguments(String[] args) {
         int sum = 0;
+        if(Integer.valueOf(args[0]) == '-'){
         for(int i = 0; i < args.length; i++){
+            sum = sum + Integer.parseInt(-(args[i]));
+        }
+      }
+        else{
+            for(int i = 0; i < args.length; i++){
             sum = sum + Integer.parseInt(args[i]);
         }
+        
         return sum;
     }
 }
