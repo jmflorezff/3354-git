@@ -7,11 +7,22 @@ public class Main {
             int result = addArguments(args);
             System.out.println(result);
         } catch (Exception e) {
-            System.err.println("Please provide two integers to add");
+            System.err.println("Please provide an arbitrary number of integers to add");
         }
     }
 
     private static int addArguments(String[] args) {
-        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]);
+        int sum = 0;
+        if(Integer.valueOf(args[0]) == '-'){
+        for(int i = 0; i < args.length; i++){
+            sum = sum + Integer.parseInt(-(args[i]));
+        }
+      }
+        else{
+            for(int i = 0; i < args.length; i++){
+            sum = sum + Integer.parseInt(args[i]);
+        }
+        
+        return sum;
     }
 }
