@@ -12,6 +12,6 @@ public class Main {
     }
 
     private static int addArguments(String[] args) {
-        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]) + Integer.valueOf(args[2]) ;
+        return Integer.valueOf(args[0]) - Integer.valueOf(args[1]) - Integer.valueOf(args[2]) ;
     }
 }
